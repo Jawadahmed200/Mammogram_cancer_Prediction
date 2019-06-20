@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block body%}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="post">
+                    <div class="form-group">
+                          <div class="form-group row">
+                                <div class="col">
+
+                                <input class="form-control" id="ex1" type="number" placeholder="Clump Thickness" name="ex1" required="required">
+                                </div>
+                                <div class="col">
+
+                                <input class="form-control" id="ex2" type="number" name="ex2" placeholder="Uniformity of cell size" required="required">
+                                </div>
+
+
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                          <div class="form-group row">
+
+                                 <div class="col">
+
+                                <input class="form-control" id="ex3" type="number" placeholder="Uniformity_of_cell_shape" name="ex3" required="required">
+                                </div>
+                                <div class="col">
+
+                                <input class="form-control" id="ex4" type="number" name="ex4" placeholder="Marginal_adhesion" required="required">
+                                </div>
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                       <div class="form-group row">
+
+                                <div class="col">
+
+                                <input class="form-control" id="ex5" type="number" placeholder="Single_epithelial_cell_size" name="ex5" required="required">
+                                </div>
+                                <div class="col">
+
+                                <input class="form-control" id="ex6" type="number" name="ex6" placeholder="Bare_nuclei" required="required">
+                                </div>
+
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+
+                    <div class="form-group">
+                       <div class="form-group row">
+
+                                <div class="col">
+
+                                <input class="form-control" id="ex7" type="number" placeholder="Bland_chromatin" name="ex7" required="required">
+                                </div>
+                                <div class="col">
+
+                                <input class="form-control" id="ex8" type="number" name="ex8" placeholder="Normal_nucleoli" required="required">
+                                </div>
+
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+
+                    <div class="form-group">
+                       <div class="form-group row">
+
+                                <div class="col">
+
+                                <input class="form-control" id="ex9" type="number" placeholder="Mitosis" name="ex9" required="required">
+                                </div>
+                                <div class="col">
+
+                                <select class="form-control country">
+                                    <option>Random Forest</option>
+                                    <option>KNN</option>
+                                    <option>SVM</option>
+                                    <option>Decision Tree</option>
+                                    <option>Naive Bayes</option>
+                                    <option>Nueral Network</option>
+                                </select>
+                                </div>
+
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+
+                    <input type="hidden" id="hidd" name="hidd">
+
+                    <!-- Default inline 1-->
+                    <br>
+                    <button type="submit" class="btn btn-primary" id="btn" style="margin-top: 20px;">Submit</button>
+                </form>
+            </div>
+            <div class="col" style="border-left: 6px dotted grey;">
+                <h2>Result :</h2><span> This result is base on {{msg}}</span><br>
+                <span>{{ac}}</span><br>
+                <span> This accuracy of {{msg}}</span><br>
+                <span>{{score}}</span>
+            </div>
+        </div>
+    </div>
+   {% endblock %}

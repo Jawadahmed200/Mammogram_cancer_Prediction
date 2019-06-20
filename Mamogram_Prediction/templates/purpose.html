@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body%}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Purpose</h2><br>
+                <p style="text-align: justify;">Purpose of this Website is to predict the diseases in Mammogram. User give the input and on the basis of input machine predict the answer. The highest mortality of both Pakistan and abroad is due to Mammogram disease. So it is vital time to check this death toll by correctly identifying the disease in initial stage. The matter become a headache for all doctors. Now a days doctors are adopting many scientific technologies and methodology for both identification and diagnosing not only common disease, but also many fatal diseases. The successful treatment is always attributed by right and accurate diagnosis. Doctors may sometimes fail to take accurate decisions while diagnosing the Mammogram disease of a patient, therefore Mammogram disease prediction systems which use machine learning algorithms assist in such cases to get accurate results.</p><br>
+                <br><a href="/contact"> <button class="btn btn-default btn-lg">Get in Touch</button></a>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"> <img class="card-img-top" style="border-style: none; margin-left:10px; margin-top: 30px;" src="{{ url_for('static',filename='img/2.png')}}" alt="Card image cap"></span>
+            </div>
+        </div>
+    </div>
+   {%endblock %}
